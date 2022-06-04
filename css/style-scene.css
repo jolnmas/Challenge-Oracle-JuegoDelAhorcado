@@ -357,6 +357,7 @@ html, body{
     text-align: center;
     margin-top: 1%;
     font-family: 'Inter', sans-serif;
+    color:rgb(192, 192, 192);
     animation: textDeslizamientoReglas 1s;
 }
 
