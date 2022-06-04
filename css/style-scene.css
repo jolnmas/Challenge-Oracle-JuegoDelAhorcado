@@ -20,10 +20,9 @@ html, body{
 
 #logo{
     position:absolute;
-    width:3%;
-    height: 3%;
-    left: 2.2%;
-    top :6px;
+    width: 30px;;
+    height: 30px;
+    left: 2.5%;
 }
 
 .vida{
