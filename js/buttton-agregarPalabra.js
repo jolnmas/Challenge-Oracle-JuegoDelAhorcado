@@ -24,7 +24,15 @@ function obtenerPalabra(){
             var palabra=newPalabra.value;
             newPalabra.value="";
             if(!validarAllSameChart(palabra)){
-                agregarNuevaPalabra(palabra);
+                
+                if(validarTamanhoPalabra(palabra)){
+                    agregarNuevaPalabra(palabra);
+                }
+                else{
+                    alert("Invalido....");
+                newPalabra.value="";
+                }
+               
             }
             else{
                 alert("Invalido....");
