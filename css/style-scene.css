@@ -715,7 +715,7 @@ footer>p{
         border-radius: 23px;
         font-size: 80px;
         font-family: 'Inter', sans-serif;
-        line-height: 125px;
+        line-height: 105px;
         vertical-align: top;
         border: 2px solid rgb(72, 197, 255);
         animation: inicio 5s;
@@ -734,7 +734,7 @@ footer>p{
         font-family: 'Inter', sans-serif;
         vertical-align: top;
         border: 2px solid rgb(72, 197, 255);
-        line-height:  125px;
+        line-height:  105px;
         animation: inicio 5s;
         animation-iteration-count: infinite;
         }
