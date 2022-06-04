@@ -20,8 +20,8 @@ html, body{
 
 #logo{
     position:absolute;
-    width:2.5%;
-    height: 4%;
+    width:3%;
+    height: 3%;
     left: 2.2%;
     top :6px;
 }
@@ -115,7 +115,7 @@ html, body{
 
 .letra{
     background: rgb(0, 0, 0);
-    width: 120px;
+    width: 12%;
     height: 100px;
     color: rgb(255, 255, 255);
     line-height: 100px;
@@ -163,6 +163,10 @@ html, body{
         line-height:  100px;
         animation: inicio 5s;
         animation-iteration-count: infinite;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
         }
  
 .linea{
@@ -242,12 +246,12 @@ html, body{
 .button-reiniciar{
     width: 90px;
     height: 80px;
-    margin-top: 20px ;
-    margin-left: 42% ;
-    margin-right: 42%;
+    margin: 20px auto ;
     border: 1px solid black;
     border-radius: 20px;
     background:rgb(204, 204, 204);
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .button-reiniciar:hover{
@@ -715,29 +719,29 @@ footer>p{
         border-radius: 23px;
         font-size: 80px;
         font-family: 'Inter', sans-serif;
-        line-height: 105px;
+        line-height: 120px;
         vertical-align: top;
         border: 2px solid rgb(72, 197, 255);
         animation: inicio 5s;
         animation-iteration-count: infinite;
         }
-        
-    .letra-oculta{
-        background: rgb(0, 0, 0);
-        width: 12%;
-        height: 70%;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        margin-top: 2%;
-        border-radius: 23px;
-        font-size: 80px;
-        font-family: 'Inter', sans-serif;
-        vertical-align: top;
-        border: 2px solid rgb(72, 197, 255);
-        line-height:  105px;
-        animation: inicio 5s;
-        animation-iteration-count: infinite;
-        }
+
+        .letra-oculta{
+            background: rgb(0, 0, 0);
+            width: 12%;
+            height:70%;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 2%;
+            border-radius: 23px;
+            font-size: 80px;
+            font-family: 'Inter', sans-serif;
+            line-height: 120px;
+            vertical-align: top;
+            border: 2px solid rgb(72, 197, 255);
+            animation: inicio 5s;
+            animation-iteration-count: infinite;
+            }
 
         @keyframes inicio {
             0% {
