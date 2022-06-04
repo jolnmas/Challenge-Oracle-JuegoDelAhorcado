@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Juego del ahorcado</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-scene.css?v1">
+    </head>
+    <body>
+        <div class="layout-area-top">
+            <div class="container">
+                <div> <img id="logo" src="assets/logo.png"></div>
+            </div>
+            
+            <div class="vida"> 
+                <div id="base-life"></div>
+                <div id="damage"></div>
+            </div>
+        </div>
+
+        <div class="layout-area-right">
+            <button id="buttonIcon1Left"><img id="imagen-icon" src="assets/reiniciar.png"></button>
+            <button id="buttonIcon2Left"><img id="imagen-icon" src="assets/add-button.png"></button>
+        </div>
+
+        <div class="layout-area-left">
+            <ul class="word-used-flex"> 
+            </ul>
+        </div>
+       
+        <section class="section-center">
+            <div id="vent" class="ventana">
+                <div id="resultado"></div>
+                <div id="resultado-Final">
+                    <img class="imagen-Resultado"src="assets/trofeo.png">
+                </div>
+                <h4 id="palabra-revelada"></h3>         
+            </div>
+
+            <canvas  class="layout-area-drawing"></canvas>
+
+            <div class="layout-agregar-palabra">
+                <label id= "texto-agregar-palabra" for="agregar-palabra"> Agregar Palabra</label>
+                <input type="text" id="input-agregar-palabra"  onkeyup="mayus(this)">
+                <div id="input-agregar-palabra-movil"></div>
+                <p class="reglas">Min:4 Max: 8</p>
+                <button id="button-agregar">Agregar</button>
+                <button id="button-cerrar">Cerrar</button>
+                <div class="mensaje">La palabra ha sido agregada</div>
+            </div>
+            
+            <div class="layout-area-word_flex">
+                <ul class="palabra"></ul>
+                <ul class="linea-palabra"></ul>
+            </div>
+        </section>
+
+        <div class="teclado-virtual">
+            <div class="fila1_flex">
+                <button id="button-Q" class="button-virtual" >Q</button>
+                <button id="button-W" class="button-virtual" >W</button>
+                <button id="button-E" class="button-virtual" >E</button>
+                <button id="button-R" class="button-virtual" >R</button>
+                <button id="button-T" class="button-virtual" >T</button>
+                <button id="button-Y" class="button-virtual" >Y</button>
+                <button id="button-U" class="button-virtual" >U</button>
+                <button id="button-I" class="button-virtual" >I</button>
+                <button id="button-O" class="button-virtual" >O</button>
+                <button id="button-P" class="button-virtual" >P</button>
+            </div>
+            <div class="fila2_flex">
+                <button id="button-A" class="button-virtual" >A</button>
+                <button id="button-S" class="button-virtual" >S</button>
+                <button id="button-D" class="button-virtual" >D</button>
+                <button id="button-F" class="button-virtual" >F</button>
+                <button id="button-G" class="button-virtual" >G</button>
+                <button id="button-H" class="button-virtual" >H</button>
+                <button id="button-J" class="button-virtual" >J</button>
+                <button id="button-K" class="button-virtual" >K</button>
+                <button id="button-L" class="button-virtual" >L</button>
+                <button id="button-Ñ" class="button-virtual" >Ñ</button>
+            </div>
+            <div class="fila3_flex">
+                <button id="button-Z" class="button-virtual" >Z</button>
+                <button id="button-X" class="button-virtual" >X</button>
+                <button id="button-C" class="button-virtual" >C</button>
+                <button id="button-V" class="button-virtual" >V</button>
+                <button id="button-B" class="button-virtual" >B</button>
+                <button id="button-N" class="button-virtual" >N</button>
+                <button id="button-M" class="button-virtual" >M</button>
+                <button id="button-borrar" class="button-virtual" >&#9003;</button>
+            </div> 
+        </div> 
+      
+        <footer >
+            <p  class="made-by">Made by JO</p>
+        </footer>
+
+        <script src="js/evento-teclado.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/button-reiniciar.js"></script>
+        <script src="js/buttton-agregarPalabra.js"></script>
+    </body>
+</html>
