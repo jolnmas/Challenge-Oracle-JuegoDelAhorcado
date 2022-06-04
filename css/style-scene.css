@@ -687,8 +687,9 @@ footer>p{
         width: 150px;
         height: 140px;
         margin-top: 20px ;
-        margin-left: 40% ;
         margin-right: 40%;
+        margin-left: 50%;
+        transform: translateX(-50%);
         border-radius: 10px;
         background:rgb(204, 204, 204);
         border: 2px solid rgb(0, 0, 0);
@@ -718,7 +719,7 @@ footer>p{
         border-radius: 23px;
         font-size: 80px;
         font-family: 'Inter', sans-serif;
-        line-height: 120px;
+        line-height: 105px;
         vertical-align: top;
         border: 2px solid rgb(72, 197, 255);
         animation: inicio 5s;
@@ -735,7 +736,7 @@ footer>p{
             border-radius: 23px;
             font-size: 80px;
             font-family: 'Inter', sans-serif;
-            line-height: 120px;
+            line-height: 105px;
             vertical-align: top;
             border: 2px solid rgb(72, 197, 255);
             animation: inicio 5s;
